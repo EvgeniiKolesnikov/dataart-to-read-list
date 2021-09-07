@@ -1,0 +1,107 @@
+// Colors
+$white: #ffffff;
+$blue: #2f9ee7;
+$orange: rgb(255, 196, 0);
+
+$darkBlack: #171614;
+$lightBlack4:#444444;
+$lightBlack6: #666666;
+$lightBlack7: #777777;
+
+// Light theme colors
+:root {
+  --blue: #2f9ee7;
+  --orange:#ffb400;
+  --input:#ffffff;
+  --input__box:#f1f1f1;
+  --input__control:#888888;
+  --input__control_color: #9c9c9c;
+
+  --scroll:#b6b6b6;
+
+  --button-bg: #2f9ee7;
+  --button-border: #2f9ee7;
+  --button-hover: #258ace;
+  --button-active: #176da7;
+  --button-text: #fff;
+
+  --mt: #dcdcdc;
+  --book-card__title:#303030;
+  --book-card__lang:#a9a9a9;
+  --book-card__subtitle: #919191;
+
+  --spinner-mini: #ffffff;
+
+  --book-info__header: #ffffff;
+  --header:#333;
+  --header-title:#ababab;
+  --book-info__title:#333;
+
+  --body: #fafafa;
+  --read-list__header:#ece2a7;
+  --book-card--read-list:#faf6e0;
+  --book-card--read-list-b:#e8e8e8;
+  --book-card--read:#e5ffdb;
+
+  --book-card--active:#dadada;
+  --book-card--hover:#eeeeee;
+
+  --bg-col:#ffffff;
+  --read-list__title:#3b3b3b;
+  --read-list__item:#383838;
+  --book-card__button:#1068d6;
+  --book-card__author:##8d8d8d;
+}
+
+// Dark theme colors
+:root[theme='dark'] {
+  --blue:#17567f;
+  --orange:#ffb400;
+  --input:#202020;
+  --input__box:#0f0f0f;
+  --input__control:#202020;
+  --input__control_color: #9c9c9c;
+
+  --bg-header-input:#121212;
+  --bg-header-text:#828282;
+  --bg-header-item:#ffffff;
+  --bg-header-find:#323232;
+  --bg-header-ico:#6f6f6f;
+
+  --scroll:#909090;
+
+  --button-bg: #18242c;
+  --button-border: #17567f;
+  --button-hover: #1e4e6e;
+  --button-active: #10293b;
+  --button-text: rgb(177, 177, 177);
+  
+  --mt: #5e5e5e;
+  --book-card__title:#949494;
+  --book-card__lang:#545454;
+  --book-card__subtitle: #616161;
+
+  --spinner-mini: #181818;
+
+  --book-info__header: #1d1d1d;
+  --header:#202020;
+  --header-title:#ababab;
+
+  --book-info__title:#858585;
+  --body: #181818;
+  --read-list__header:#353225;
+  --book-card--read-list:#27251b;
+
+  --book-card--read-list-b:#464646;
+  --book-card--read:#1f2d1a;
+
+  --book-card--active:#0c0c0c;
+  --book-card--hover:#312e27;
+
+  --bg-col:#181818;
+  --read-list__title:#a27c1f;
+  --read-list__item:#846e3a;
+
+  --book-card__button:#436084;
+  --book-card__author:#5f5e5e;
+}

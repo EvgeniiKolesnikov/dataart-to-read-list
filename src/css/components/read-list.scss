@@ -1,0 +1,82 @@
+.read-list {
+  &__header {
+    margin: 0px 0px;
+    padding: 5px 0 0 0;
+    height: 51px;
+    width: auto;
+    text-align: center;
+    border-bottom: 1px solid var(--mt);;
+    background-color: #ece2a7;
+    background-color: var(--read-list__header);
+  }
+  &__title {
+    margin: 0 0px;
+    padding: 0 0 0 0;
+    height: auto;
+    width: auto;
+    font-size: 20px;
+    color: var(--read-list__title);
+  }
+  &__about {
+    margin: 0px 0px;
+    padding: 0 0 0 0;
+    height: auto;
+    width: auto;
+    font-size: 14px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 7px
+  }
+  &__item {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    height: auto;
+    width: auto;
+    font-size: 12px;
+    color: var(--read-list__item);
+  }
+}
+
+.read-list__container {
+  margin: 0px -10px 0 0;
+  padding: 0 0 0 0;
+  height: auto;
+  width: auto;
+}
+
+.read-list  {
+  &__books {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    height: auto;
+    width: auto;
+    &-item {
+      margin: 0 0 0 0;
+      padding: 0 0 0 0;
+      height: auto;
+      width: auto;
+    }
+  }
+}
+
+.read-list  {
+  margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    height: auto;
+    width: auto;
+  &__read {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    height: auto;
+    width: auto;
+    // border-top: 2px solid #176517;
+    &-item {
+      margin: 0 0 0 0;
+      padding: 0 0 0 0;
+      height: auto;
+      width: auto;
+    }
+  }
+}

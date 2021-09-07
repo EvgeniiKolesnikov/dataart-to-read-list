@@ -1,0 +1,45 @@
+.scroll {
+  margin: 0px 3px 0px 10px;
+  /* margin: 0px 0px 0px 0px; */
+  padding: 0px 0px 0px 0px;
+  overflow: overlay;
+  position: relative;
+
+  height: calc(100% - 100px);
+  // box-shadow:0px 18px 0px rgb(255 255 205) inset;
+  // max-height: calc(100% - 35px);
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background-color: transparent;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgb(216, 216, 216);
+    background-color: #2f9ee7;
+    background-color: #ffb400;
+    background-color: var(--scroll);
+    border-right: #000;
+    border: 10px;
+    border-spacing: 1cm;
+  }
+  @media (max-width: 780px) {
+    height: calc(100% - 50px);
+  }
+  &--books-list { 
+    height: calc(100% - 88px);
+  }
+  &--read-list { 
+    // height: calc(100% - 50px);
+    overflow-x: hidden;
+    margin: 0px 0px 0px 0px;
+    max-height: calc(100vh - 100px);
+  }
+} 
+

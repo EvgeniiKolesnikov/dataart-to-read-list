@@ -1,0 +1,116 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Kolesnikov Evgenii">
+  <title>To Read List</title>
+  <link rel="shortcut icon" href="./src/img/book.png" type="image/x-icon">
+  <link rel="stylesheet" href="./src/css/main.scss">
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- header -->
+    <header class="header">
+      <div class="header__container">
+        <h1 class="header__title">Books</h1>
+        <div class="header__menu">
+          <button class="header__menu-item" id="onSearchListBtn">
+            <img class="header__menu-img" src="./src/img/search.png" title="Open Search" alt="searchIcon">
+          </button>
+          <button class="header__menu-item" id="onInfoListBtn">
+            <img class="header__menu-img" src="./src/img/info.png" title="Open Info List" alt="infoListIcon">
+          </button>
+          <button class="header__menu-item" id="onReadListBtn">
+            <img class="header__menu-img" src="./src/img/doc.png" title="Open Read List" alt="readListIcon" >
+          </button>
+          <button class="header__menu-item" value="Light/Dark" id="toggleThemeButton">
+            <img class="header__menu-img" src="./src/img/sun.png" id="sunIcon" alt="switchIcon" title="Switch Color Theme">
+            <img class="header__menu-img" src="./src/img/moon.png" id="moonIcon" alt="switchIcon" title="Switch Color Theme">
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- main -->
+    <main class="page">
+      <div class="book-shelf">
+
+        <!-- list -->
+        <section class="books-list left-block" id="leftBlock">
+          <div class="input input--books-list">
+            <div class="input__box">
+              <input class="input__control" id="searchInput" placeholder="Search books" type="text" name="search"
+                title="Search books">
+              <div class="input__clear" id="searchClear" unselectable="on" title="Clear"></div>
+            </div>
+            <button class="input__button" id="searchButton">Go!</button>
+          </div>
+          <div class="scroll scroll--books-list" id="scrollBooksList">
+            <div class="spinner-big" id="spinnerBig">
+              <div class="blob top"></div>
+              <div class="blob bottom"></div>
+              <div class="blob left"></div>
+              <div class="blob move-blob"></div>
+            </div>
+            <div class="books-list__container" id="booksList"></div>
+            <div class="spinner__container" id="spinnerMini">
+              <div class="spinner-mini">
+                <div class="blob blob--mini top"></div>
+                <div class="blob blob--mini bottom"></div>
+                <div class="blob blob--mini left"></div>
+                <div class="blob blob--mini move-blob"></div>
+              </div>
+            </div>
+          </div>
+          <div class="books-list__about">
+            <div class="books-list__item" id="booksShown">Shown books: 0</div>
+            <div class="books-list__item" id="booksFound">Found books: 0</div>
+          </div>
+        </section>
+
+        <!-- info -->
+        <section class="book-info center-block" id="centerBlock">
+          <div class="book-info__header" id="bookInfoHeader"></div>
+          <div class="book-info__props" id="bookInfoProps"></div>
+          <button class="book-info__addButton" id="addToReadButton">Add book to Read List</button>
+        </section>
+
+        <!-- read -->
+        <section class="read-list right-block" id="rightBlock">
+          <div class="read-list__header">
+            <div class="read-list__title">To read list...</div>
+            <div class="read-list__about">
+              <div class="read-list__item" id="readListBookCount">0 books,</div>
+              <div class="read-list__item" id="readListReadCount">0 read</div>
+            </div>
+          </div>
+
+          <div class="scroll scroll--read-list">
+            <div class="read-list__container" id="readList">
+
+              <!-- readListBook -->
+              <div class="read-list__books" id="readListBook">
+
+              </div>
+              <!-- readListRead -->
+              <div class="read-list__read" id="readListRead">
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+    <!-- footer -->
+    <footer class="footer"></footer>
+  </div>
+  <script src="./src/js/index.js"></script>
+</body>
+
+</html>

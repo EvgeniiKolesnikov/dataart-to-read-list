@@ -1,0 +1,62 @@
+*, *:before, *:after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: 
+  "Roboto", 
+  "Lato", 
+  "Open+Sans",
+  "Roboto+Mono",
+  "Oswald",
+  "Montserrat",
+  "Roboto+Slab",
+  "Raleway",
+  "Fira+Sans",
+  "Oxygen",
+  "Ubuntu",
+  "Cantarell",
+  "Indie+Flower",
+  sans-serif;
+}
+
+
+
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  overflow: overlay;
+  background-color: var(--body);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height:  5px;
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(179, 179, 179);
+}
+::-webkit-scrollbar-track {
+  background: rgba($color: #074ece, $alpha: 0.0);
+}
+
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+label {
+  display: none;
+}
+button {
+  background: transparent;
+  cursor: pointer;
+}
+button:active, button:focus {
+  outline: none;
+}
+button::-moz-focus-inner {
+  border: 0;
+}
