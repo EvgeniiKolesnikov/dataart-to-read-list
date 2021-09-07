@@ -728,7 +728,7 @@ var BookCard = /*#__PURE__*/function () {
 
 exports.BookCard = BookCard;
 },{}],"A8J8":[function(require,module,exports) {
-module.exports = "dataart-to-read-list/skin.b4b31e92.png";
+module.exports = "/dataart-to-read-list/skin.b4b31e92.png";
 },{}],"kesZ":[function(require,module,exports) {
 'use strict';
 
@@ -1343,4 +1343,4 @@ new _toggleTheme.ToggleTheme(storage);
 new _buttonsController.ButtonsController(storage, bookInfo);
 new _menuController.MenuController();
 },{"./book-info":"cojp","./buttons-controller":"hQ4w","./data":"nd3t","./menu-controller":"NVxX","./scroll-controller":"N2TO","./search-controller":"VvdB","./storage":"cMRm","./toggle-theme":"ojng"}]},{},["mahc"], null)
-//# sourceMappingURL=dataart-to-read-list/js.042d6f07.js.map
+//# sourceMappingURL=/dataart-to-read-list/js.042d6f07.js.map
