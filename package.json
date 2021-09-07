@@ -5,6 +5,8 @@
   "devDependencies": {
     "@babel/core": "^7.13.15",
     "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/plugin-transform-runtime": "^7.15.0",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
     "gh-pages": "^3.2.3",
     "parcel-bundler": "^1.12.5",
     "sass": "^1.32.10"
@@ -12,19 +14,30 @@
   "scripts": {
     "start": "parcel index.html",
     "dev": "parcel build index.html -d build --public-url=. --no-minify",
-    "build": "parcel build index.html NODE_ENV=production -d build --public-url= dataart-to-read-list --no-minify",
+    "build": "parcel build index.html NODE_ENV=production -d build --public-url /dataart-to-read-list --no-minify",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "browserslist": [
-    "last 1 Chrome version"
-  ],
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "babel": {
     "plugins": [
-      "@babel/plugin-proposal-class-properties"
+      "@babel/plugin-proposal-class-properties",
+      "@babel/plugin-transform-runtime"
     ]
   },
   "dependencies": {
+    "@babel/runtime": "^7.15.4",
     "src": "^1.1.2"
   }
 }
